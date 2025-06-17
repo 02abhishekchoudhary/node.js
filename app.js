@@ -1,3 +1,10 @@
-const { add, sub } = require("./math");
-console.log(add(5, 10));
-console.log(sub(5, 10));
+// const { add, sub, div, mult } = require("./math");
+// console.log(add(5, 10));
+// console.log(sub(5, 10));
+// console.log(div(5, 10));
+// console.log(mult(5, 10));
+const math = require("./math");
+console.log(math.add(5, 10));
+console.log(math.sub(5, 10));
+console.log(math.div(5, 10));
+console.log(math.mult(5, 10));
