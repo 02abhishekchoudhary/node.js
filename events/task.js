@@ -10,23 +10,27 @@ const eventCounts = {
 };
 
 emitter.on("user-login", (username) => {
+  eventCounts["user-login"]++;
   console.log(`${username} logged in!`);
-  eventCounts["user-login"] += 1;
+  // eventCounts["user-login"] += 1;
 });
 
 emitter.on("user-purchase", (username, product) => {
+  eventCounts["user-purchase"]++;
   console.log(`${username} purchased a ${product}`);
-  eventCounts["user-purchase"] += 1;
+  // eventCounts["user-purchase"] += 1;
 });
 
 emitter.on("profile-update", (username) => {
+  eventCounts["profile-update"]++;
   console.log(`${username} updated their profile!`);
-  eventCounts["profile-update"] += 1;
+  // eventCounts["profile-update"] += 1;
 });
 
 emitter.on("user-logout", (username) => {
+  eventCounts["user-logout"]++;
   console.log(`${username} logged out`);
-  eventCounts["user-logout"] += 1;
+  // eventCounts["user-logout"] += 1;
 });
 
 emitter.on("summary", () => {
